@@ -13,7 +13,7 @@ def destroy
  	@todo_item = @todo_list.todo_items.find(params[:id])
  
  	if @todo_item.destroy
- 	 	flash[:success] = "O tarefa foi apagada!"
+ 	 	flash[:success] = "A tarefa foi apagada!"
  	
  	else
   		flash[:error] = "A tarefa não pode ser apagada"
