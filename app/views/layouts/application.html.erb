@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Todo</title>
+    <title>Lista de tarefas</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -10,8 +10,26 @@
   </head>
 <body>
 <div class="container">
+
+  <% if notice %>
+    <center><p class="alert alert-success"><%= notice %></p></center>
+  <% end %>
+  
+  <% if alert %>
+    <center><p class="alert alert-danger"><%= alert %></p></center>
+  <% end %>
+
     <%= yield %>
    </div>
+
+<p class="navbar-text float-right">
+<% if user_signed_in? %>
+  <center><strong>Logado como: </strong><%= current_user.email %></center><br>
+  <center>
+      <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link' %> |
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  </center>
+<% end %>
     
   </body>
 </html>
