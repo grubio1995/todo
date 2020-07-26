@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Lista de tarefas desenvolvida em ruby on rails
 
-Things you may want to cover:
 
-* Ruby version
+# Requisitos
 
-* System dependencies
+* Git
+* Ruby
+* Rails
+* SQLite3
+* Yarn
 
-* Configuration
+# Preparação
 
-* Database creation
+<b>Clonar este repositório:</b>
 
-* Database initialization
+git clone https://github.com/grubio1995/todo
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
