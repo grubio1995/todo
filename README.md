@@ -38,7 +38,7 @@ yarn install --check-files
 ```shell
 rake db:migrate
 ```
-<b> Após isso, iniciar o servidor
+<b> Após isso, iniciar o servidor </b>
 
 ```shell
 rails s
