@@ -15,5 +15,32 @@ Lista de tarefas desenvolvida em ruby on rails
 
 <b>Clonar este repositório:</b>
 
+```shell
 git clone https://github.com/grubio1995/todo
+```
+<b>E seguir para diretório (acessar via prompt de comandos)</b>
 
+```shell
+cd todo
+```
+<b>Instalar a bundle</b>
+
+```shell
+bundle install
+```
+<b> Instalar todas as dependências do projeto </b>
+
+```
+yarn install --check-files
+```
+<b>Então rodar a migration</b>
+
+```shell
+rake db:migrate
+```
+<b> Após isso, iniciar o servidor
+
+```shell
+rails s
+```
+<b> E então acesssar a aplicação no navegador: locahost:3000 </b>
