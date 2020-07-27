@@ -1,6 +1,6 @@
 # README
 
-Lista de tarefas desenvolvida em ruby on rails
+Mini app (Lista de tarefas) desenvolvido durante processo seletivo na empresa AutoSeg
 
 
 # Requisitos
